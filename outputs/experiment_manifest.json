@@ -1,0 +1,32 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "strengths": [
+    "null",
+    "weak",
+    "moderate",
+    "strong"
+  ],
+  "n_orig_per_quarter": 600,
+  "paired_seed_base": 777,
+  "structural_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "split": {
+    "dev_end": "2016Q4",
+    "val_end": "2019Q4"
+  },
+  "vasicek": false,
+  "macro_lag": false,
+  "hidden_set_seed": 20240824,
+  "claim_boundary": "methodological recovery in a UK-informed simulator; not causal or true UK/Lloyds coefficients"
+}

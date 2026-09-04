@@ -1,0 +1,26 @@
+[
+  {
+    "partition": "dev",
+    "rows": 341422,
+    "loans": 37800,
+    "obs_from": "2001Q2",
+    "obs_to": "2016Q4",
+    "default_rate_%": 0.988
+  },
+  {
+    "partition": "val",
+    "rows": 38023,
+    "loans": 7200,
+    "obs_from": "2017Q1",
+    "obs_to": "2019Q4",
+    "default_rate_%": 0.697
+  },
+  {
+    "partition": "conf",
+    "rows": 100845,
+    "loans": 12000,
+    "obs_from": "2020Q1",
+    "obs_to": "2025Q4",
+    "default_rate_%": 0.812
+  }
+]

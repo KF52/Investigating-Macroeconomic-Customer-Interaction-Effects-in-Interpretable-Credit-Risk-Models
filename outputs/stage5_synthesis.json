@@ -1,0 +1,922 @@
+{
+  "predictive_league": {
+    "EBM": {
+      "auc": 0.7857,
+      "brier": 0.0081,
+      "ece": 0.0013,
+      "cal_slope": 0.9712,
+      "avg_precision": 0.06
+    },
+    "GAM": {
+      "auc": 0.7491,
+      "brier": 0.0104,
+      "ece": 0.0079,
+      "cal_slope": 0.4662,
+      "avg_precision": 0.0344
+    },
+    "Logistic": {
+      "auc": 0.7622,
+      "brier": 0.0098,
+      "ece": 0.0067,
+      "cal_slope": 0.5368,
+      "avg_precision": 0.0373
+    }
+  },
+  "planted_recovery": {
+    "EBM|moderate": {
+      "sign_acc": 0.92,
+      "mean_b_active": 0.028,
+      "mean_oracle_b_active": 0.142,
+      "recovery_pct_vs_oracle": 18.2,
+      "norm_abs_err_pct": 81.8,
+      "mean_b_decoy": 0.008,
+      "active_decoy_ratio": 3.51,
+      "power_active": 0.0,
+      "fpr_decoy": 0.027
+    },
+    "EBM|strong": {
+      "sign_acc": 0.92,
+      "mean_b_active": 0.059,
+      "mean_oracle_b_active": 0.252,
+      "recovery_pct_vs_oracle": 23.2,
+      "norm_abs_err_pct": 76.8,
+      "mean_b_decoy": 0.012,
+      "active_decoy_ratio": 5.06,
+      "power_active": 0.32,
+      "fpr_decoy": 0.087
+    },
+    "EBM|weak": {
+      "sign_acc": 0.8,
+      "mean_b_active": 0.007,
+      "mean_oracle_b_active": 0.072,
+      "recovery_pct_vs_oracle": 7.7,
+      "norm_abs_err_pct": 92.3,
+      "mean_b_decoy": 0.004,
+      "active_decoy_ratio": 1.98,
+      "power_active": 0.0,
+      "fpr_decoy": 0.007
+    },
+    "GAM|moderate": {
+      "sign_acc": 0.88,
+      "mean_b_active": 0.171,
+      "mean_oracle_b_active": 0.142,
+      "recovery_pct_vs_oracle": 107.6,
+      "norm_abs_err_pct": 70.1,
+      "mean_b_decoy": 0.086,
+      "active_decoy_ratio": 1.98,
+      "power_active": 0.0,
+      "fpr_decoy": 0.007
+    },
+    "GAM|strong": {
+      "sign_acc": 0.96,
+      "mean_b_active": 0.274,
+      "mean_oracle_b_active": 0.252,
+      "recovery_pct_vs_oracle": 104.0,
+      "norm_abs_err_pct": 50.5,
+      "mean_b_decoy": 0.118,
+      "active_decoy_ratio": 2.32,
+      "power_active": 0.12,
+      "fpr_decoy": 0.02
+    },
+    "GAM|weak": {
+      "sign_acc": 0.72,
+      "mean_b_active": 0.12,
+      "mean_oracle_b_active": 0.072,
+      "recovery_pct_vs_oracle": 98.9,
+      "norm_abs_err_pct": 145.3,
+      "mean_b_decoy": 0.1,
+      "active_decoy_ratio": 1.19,
+      "power_active": 0.04,
+      "fpr_decoy": 0.013
+    },
+    "Logistic|moderate": {
+      "sign_acc": 0.92,
+      "mean_b_active": 0.147,
+      "mean_oracle_b_active": 0.142,
+      "recovery_pct_vs_oracle": 98.9,
+      "norm_abs_err_pct": 49.7,
+      "mean_b_decoy": 0.07,
+      "active_decoy_ratio": 2.1,
+      "power_active": 0.0,
+      "fpr_decoy": 0.007
+    },
+    "Logistic|strong": {
+      "sign_acc": 1.0,
+      "mean_b_active": 0.235,
+      "mean_oracle_b_active": 0.252,
+      "recovery_pct_vs_oracle": 93.3,
+      "norm_abs_err_pct": 33.4,
+      "mean_b_decoy": 0.089,
+      "active_decoy_ratio": 2.64,
+      "power_active": 0.0,
+      "fpr_decoy": 0.0
+    },
+    "Logistic|weak": {
+      "sign_acc": 0.76,
+      "mean_b_active": 0.109,
+      "mean_oracle_b_active": 0.072,
+      "recovery_pct_vs_oracle": 86.9,
+      "norm_abs_err_pct": 113.0,
+      "mean_b_decoy": 0.077,
+      "active_decoy_ratio": 1.41,
+      "power_active": 0.0,
+      "fpr_decoy": 0.007
+    }
+  },
+  "structural_fidelity": {
+    "EBM": {
+      "sign_agree_strong": 1.0,
+      "surface_corr": 0.422,
+      "rmse": 0.038
+    },
+    "GAM": {
+      "sign_agree_strong": 0.933,
+      "surface_corr": 0.317,
+      "rmse": 0.171
+    },
+    "Logistic": {
+      "sign_agree_strong": 0.933,
+      "surface_corr": 0.38,
+      "rmse": 0.152
+    }
+  },
+  "structural_pointwise_surface_error": [
+    {
+      "pair": "ix_dti_rate",
+      "model": "Logistic",
+      "oracle_bhat": 0.15242081458234608,
+      "pointwise_rmse": 0.0582,
+      "pointwise_nrmse": 0.247
+    },
+    {
+      "pair": "ix_dti_rate",
+      "model": "GAM",
+      "oracle_bhat": 0.15242081458234608,
+      "pointwise_rmse": 0.0516,
+      "pointwise_nrmse": 0.219
+    },
+    {
+      "pair": "ix_dti_rate",
+      "model": "EBM",
+      "oracle_bhat": 0.15242081458234608,
+      "pointwise_rmse": 0.2166,
+      "pointwise_nrmse": 0.92
+    },
+    {
+      "pair": "ix_selfemp_gdp",
+      "model": "Logistic",
+      "oracle_bhat": -0.08107047316981317,
+      "pointwise_rmse": 0.2926,
+      "pointwise_nrmse": 1.268
+    },
+    {
+      "pair": "ix_selfemp_gdp",
+      "model": "GAM",
+      "oracle_bhat": -0.08107047316981317,
+      "pointwise_rmse": 0.2268,
+      "pointwise_nrmse": 0.983
+    },
+    {
+      "pair": "ix_selfemp_gdp",
+      "model": "EBM",
+      "oracle_bhat": -0.08107047316981317,
+      "pointwise_rmse": 0.1933,
+      "pointwise_nrmse": 0.838
+    },
+    {
+      "pair": "ix_income_rate",
+      "model": "Logistic",
+      "oracle_bhat": 0.047920439798345565,
+      "pointwise_rmse": 0.0513,
+      "pointwise_nrmse": 0.648
+    },
+    {
+      "pair": "ix_income_rate",
+      "model": "GAM",
+      "oracle_bhat": 0.047920439798345565,
+      "pointwise_rmse": 0.0152,
+      "pointwise_nrmse": 0.191
+    },
+    {
+      "pair": "ix_income_rate",
+      "model": "EBM",
+      "oracle_bhat": 0.047920439798345565,
+      "pointwise_rmse": 0.1005,
+      "pointwise_nrmse": 1.269
+    }
+  ],
+  "null_thresholds": {
+    "Logistic": 1.1115667502918687,
+    "GAM": 0.9115370581731533,
+    "EBM": 0.05257795313833189
+  },
+  "stress_forward": {
+    "Logistic": {
+      "baseline_auc": 0.752,
+      "severe_auc": 0.791,
+      "baseline_pd_%": 0.043,
+      "severe_pd_%": 24.368,
+      "baseline_realised_%": 0.126,
+      "severe_realised_%": 11.077,
+      "baseline_pd_gap_pp": -0.082,
+      "severe_pd_gap_pp": 13.292,
+      "baseline_brier": 0.001,
+      "severe_brier": 0.158,
+      "baseline_ece": 0.001,
+      "severe_ece": 0.142,
+      "baseline_cal_slope": 0.826,
+      "severe_cal_slope": 0.273,
+      "crn_delta_pp_mean": 24.325,
+      "crn_delta_pp_sd": 0.298,
+      "crn_delta_pp_raw": [
+        24.585,
+        24.1805,
+        24.0773,
+        24.77,
+        24.0131
+      ]
+    },
+    "GAM": {
+      "baseline_auc": 0.752,
+      "severe_auc": 0.77,
+      "baseline_pd_%": 0.042,
+      "severe_pd_%": 18.64,
+      "baseline_realised_%": 0.126,
+      "severe_realised_%": 11.077,
+      "baseline_pd_gap_pp": -0.084,
+      "severe_pd_gap_pp": 7.563,
+      "baseline_brier": 0.001,
+      "severe_brier": 0.137,
+      "baseline_ece": 0.001,
+      "severe_ece": 0.109,
+      "baseline_cal_slope": 0.82,
+      "severe_cal_slope": 0.265,
+      "crn_delta_pp_mean": 18.598,
+      "crn_delta_pp_sd": 0.329,
+      "crn_delta_pp_raw": [
+        18.7827,
+        18.4327,
+        18.3836,
+        19.1499,
+        18.2398
+      ]
+    },
+    "EBM": {
+      "baseline_auc": 0.757,
+      "severe_auc": 0.829,
+      "baseline_pd_%": 0.354,
+      "severe_pd_%": 1.912,
+      "baseline_realised_%": 0.126,
+      "severe_realised_%": 11.077,
+      "baseline_pd_gap_pp": 0.228,
+      "severe_pd_gap_pp": -9.165,
+      "baseline_brier": 0.001,
+      "severe_brier": 0.1,
+      "baseline_ece": 0.002,
+      "severe_ece": 0.092,
+      "baseline_cal_slope": 0.925,
+      "severe_cal_slope": 0.944,
+      "crn_delta_pp_mean": 1.558,
+      "crn_delta_pp_sd": 0.019,
+      "crn_delta_pp_raw": [
+        1.5442,
+        1.5304,
+        1.5748,
+        1.5816,
+        1.5595
+      ]
+    }
+  },
+  "stress_fixed_composition": {
+    "Logistic": {
+      "fixed_baseline_pd_%": 0.048,
+      "fixed_severe_pd_%": 64.712,
+      "fixed_delta_pp": 64.664
+    },
+    "GAM": {
+      "fixed_baseline_pd_%": 0.046,
+      "fixed_severe_pd_%": 36.612,
+      "fixed_delta_pp": 36.566
+    },
+    "EBM": {
+      "fixed_baseline_pd_%": 0.38,
+      "fixed_severe_pd_%": 2.343,
+      "fixed_delta_pp": 1.963
+    }
+  },
+  "stress_episodes_out_of_sample": {
+    "COVID_2020": {
+      "Logistic": {
+        "auc": 0.863,
+        "pd_gap_pp": 0.34,
+        "n": 11548
+      },
+      "GAM": {
+        "auc": 0.895,
+        "pd_gap_pp": 0.84,
+        "n": 11548
+      },
+      "EBM": {
+        "auc": 0.699,
+        "pd_gap_pp": 0.05,
+        "n": 11548
+      }
+    },
+    "inflation_2022": {
+      "Logistic": {
+        "auc": 0.761,
+        "pd_gap_pp": -0.77,
+        "n": 40382
+      },
+      "GAM": {
+        "auc": 0.76,
+        "pd_gap_pp": -1.35,
+        "n": 40382
+      },
+      "EBM": {
+        "auc": 0.837,
+        "pd_gap_pp": -1.05,
+        "n": 40382
+      }
+    }
+  },
+  "stress_episodes_excluded": {
+    "GFC_2008": {
+      "n_out_of_sample_rows": 0,
+      "reason": "window falls inside the training block under the temporal split; no out of sample rows"
+    }
+  },
+  "explanation_stability": {
+    "Logistic": {
+      "mean_sign_preservation": 1.0,
+      "mean_rank_corr": 0.809,
+      "mean_abs_delta_bhat": 0.0291,
+      "per_regime": {
+        "severe": {
+          "sign_preservation": 1.0,
+          "sign_preservation_sd": 0.0,
+          "rank_corr_spearman": 0.921,
+          "rank_corr_spearman_sd": 0.001,
+          "mean_abs_db": 0.0106,
+          "mean_abs_db_sd": 0.0,
+          "rmse_db": 0.0429
+        },
+        "COVID_2020": {
+          "sign_preservation": 1.0,
+          "sign_preservation_sd": 0.0,
+          "rank_corr_spearman": 0.725,
+          "rank_corr_spearman_sd": 0.0,
+          "mean_abs_db": 0.0409,
+          "mean_abs_db_sd": 0.0,
+          "rmse_db": 0.0905
+        },
+        "inflation_2022": {
+          "sign_preservation": 1.0,
+          "sign_preservation_sd": 0.0,
+          "rank_corr_spearman": 0.781,
+          "rank_corr_spearman_sd": 0.0,
+          "mean_abs_db": 0.0357,
+          "mean_abs_db_sd": 0.0,
+          "rmse_db": 0.085
+        }
+      }
+    },
+    "GAM": {
+      "mean_sign_preservation": 0.963,
+      "mean_rank_corr": 0.767,
+      "mean_abs_delta_bhat": 0.0375,
+      "per_regime": {
+        "severe": {
+          "sign_preservation": 0.944,
+          "sign_preservation_sd": 0.0,
+          "rank_corr_spearman": 0.831,
+          "rank_corr_spearman_sd": 0.022,
+          "mean_abs_db": 0.0204,
+          "mean_abs_db_sd": 0.0005,
+          "rmse_db": 0.0529
+        },
+        "COVID_2020": {
+          "sign_preservation": 1.0,
+          "sign_preservation_sd": 0.0,
+          "rank_corr_spearman": 0.732,
+          "rank_corr_spearman_sd": 0.033,
+          "mean_abs_db": 0.0503,
+          "mean_abs_db_sd": 0.0013,
+          "rmse_db": 0.1072
+        },
+        "inflation_2022": {
+          "sign_preservation": 0.944,
+          "sign_preservation_sd": 0.0,
+          "rank_corr_spearman": 0.739,
+          "rank_corr_spearman_sd": 0.029,
+          "mean_abs_db": 0.0417,
+          "mean_abs_db_sd": 0.0002,
+          "rmse_db": 0.0899
+        }
+      }
+    },
+    "EBM": {
+      "mean_sign_preservation": 0.36,
+      "mean_rank_corr": 0.296,
+      "mean_abs_delta_bhat": 0.0238,
+      "per_regime": {
+        "severe": {
+          "sign_preservation": 0.463,
+          "sign_preservation_sd": 0.011,
+          "rank_corr_spearman": 0.187,
+          "rank_corr_spearman_sd": 0.064,
+          "mean_abs_db": 0.017,
+          "mean_abs_db_sd": 0.0012,
+          "rmse_db": 0.0307
+        },
+        "COVID_2020": {
+          "sign_preservation": 0.286,
+          "sign_preservation_sd": 0.018,
+          "rank_corr_spearman": 0.288,
+          "rank_corr_spearman_sd": 0.059,
+          "mean_abs_db": 0.0425,
+          "mean_abs_db_sd": 0.0096,
+          "rmse_db": 0.1096
+        },
+        "inflation_2022": {
+          "sign_preservation": 0.331,
+          "sign_preservation_sd": 0.091,
+          "rank_corr_spearman": 0.413,
+          "rank_corr_spearman_sd": 0.031,
+          "mean_abs_db": 0.0118,
+          "mean_abs_db_sd": 0.001,
+          "rmse_db": 0.0257
+        }
+      }
+    }
+  },
+  "explanation_faithfulness": {
+    "Logistic": {
+      "mean_sign_agree_vs_oracle": 0.894,
+      "mean_rank_corr_vs_oracle": 0.172,
+      "mean_rmse_vs_oracle": 0.1358,
+      "per_regime": {
+        "baseline": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.052,
+          "rank_corr_spearman_sd": 0.105,
+          "rmse": 0.1302,
+          "rmse_sd": 0.0002,
+          "mean_abs_diff": 0.0703
+        },
+        "severe": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.229,
+          "rank_corr_spearman_sd": 0.051,
+          "rmse": 0.1092,
+          "rmse_sd": 0.0018,
+          "mean_abs_diff": 0.0667
+        },
+        "COVID_2020": {
+          "sign_agree": 0.683,
+          "sign_agree_sd": 0.033,
+          "rank_corr_spearman": 0.039,
+          "rank_corr_spearman_sd": 0.084,
+          "rmse": 0.1497,
+          "rmse_sd": 0.0008,
+          "mean_abs_diff": 0.1005
+        },
+        "inflation_2022": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.248,
+          "rank_corr_spearman_sd": 0.045,
+          "rmse": 0.1484,
+          "rmse_sd": 0.0002,
+          "mean_abs_diff": 0.0991
+        }
+      }
+    },
+    "GAM": {
+      "mean_sign_agree_vs_oracle": 1.0,
+      "mean_rank_corr_vs_oracle": 0.214,
+      "mean_rmse_vs_oracle": 0.1758,
+      "per_regime": {
+        "baseline": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": -0.041,
+          "rank_corr_spearman_sd": 0.143,
+          "rmse": 0.1768,
+          "rmse_sd": 0.0001,
+          "mean_abs_diff": 0.0858
+        },
+        "severe": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.271,
+          "rank_corr_spearman_sd": 0.043,
+          "rmse": 0.1503,
+          "rmse_sd": 0.0025,
+          "mean_abs_diff": 0.0802
+        },
+        "COVID_2020": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.122,
+          "rank_corr_spearman_sd": 0.087,
+          "rmse": 0.1801,
+          "rmse_sd": 0.0019,
+          "mean_abs_diff": 0.1069
+        },
+        "inflation_2022": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.248,
+          "rank_corr_spearman_sd": 0.037,
+          "rmse": 0.1971,
+          "rmse_sd": 0.0001,
+          "mean_abs_diff": 0.1246
+        }
+      }
+    },
+    "EBM": {
+      "mean_sign_agree_vs_oracle": 0.756,
+      "mean_rank_corr_vs_oracle": 0.316,
+      "mean_rmse_vs_oracle": 0.0753,
+      "per_regime": {
+        "baseline": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.594,
+          "rank_corr_spearman_sd": 0.041,
+          "rmse": 0.0347,
+          "rmse_sd": 0.0022,
+          "mean_abs_diff": 0.0117
+        },
+        "severe": {
+          "sign_agree": 1.0,
+          "sign_agree_sd": 0.0,
+          "rank_corr_spearman": 0.556,
+          "rank_corr_spearman_sd": 0.067,
+          "rmse": 0.061,
+          "rmse_sd": 0.0037,
+          "mean_abs_diff": 0.0241
+        },
+        "COVID_2020": {
+          "sign_agree": 0.367,
+          "sign_agree_sd": 0.067,
+          "rank_corr_spearman": -0.007,
+          "rank_corr_spearman_sd": 0.088,
+          "rmse": 0.1153,
+          "rmse_sd": 0.0568,
+          "mean_abs_diff": 0.0485
+        },
+        "inflation_2022": {
+          "sign_agree": 0.9,
+          "sign_agree_sd": 0.122,
+          "rank_corr_spearman": 0.399,
+          "rank_corr_spearman_sd": 0.058,
+          "rmse": 0.0495,
+          "rmse_sd": 0.0013,
+          "mean_abs_diff": 0.0207
+        }
+      }
+    }
+  },
+  "rq_answers": {
+    "RQ1_recovery": "Direction is recoverable across LR, GAM and EBM (sign accuracy at least 0.88). Signed magnitude recovery versus the oracle own ruler measured b hat is near complete for LR (about 93 to 99 percent) and slightly above unity for GAM (about 104 to 107 percent, a mild over expression) but strongly attenuated for EBM (about 19 to 23 percent), which instead shows the cleanest active versus decoy separation. Structural unplanted interactions are recovered directionally, best by EBM.",
+    "RQ2_stability": "Under real out of sample historical stress (COVID and inflation) all models transport with small PD gaps. Under out of support severe forward stress they diverge and fail in opposite directions: the smallest severe PD gap in absolute terms is GAM, but EBM under predicts while LR and GAM over predict, so this is not an unambiguous winner. The interpretability side tells the same story. Measuring each model interaction fingerprint under stress against the benign baseline, Logistic keeps the most stable explanation (mean interaction ranking correlation 0.809, sign preservation 1.0) while EBM is the least stable (mean ranking correlation 0.296, sign preservation 0.36), so the most flexible model gives the least reliable explanation under stress even though it predicts best.",
+    "RQ3_best_model": "Best predictive model is EBM. EBM leads prediction, calibration and structural fidelity with the cleanest recovery separation, while LR and GAM recover planted magnitude more fully. No single model dominates on every axis."
+  },
+  "governance": {
+    "transparency": "LR is fully transparent; GAM and EBM are interpretable through their shape functions and surfaces",
+    "reproducibility": "seeds and configuration are sealed in the manifest, the oracle is exact, and the tuned settings are frozen",
+    "claim_boundary": "this is methodological recovery inside a UK informed simulator, not causal or true UK or Lloyds coefficients"
+  },
+  "reproducibility_manifest": {
+    "experiment_manifest": "experiment_manifest.json",
+    "hidden_set_seed": 20240824,
+    "run_config": {
+      "pilot": false,
+      "full": true,
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "strengths": [
+        "null",
+        "weak",
+        "moderate",
+        "strong"
+      ],
+      "n_orig": 600,
+      "n_null": 10,
+      "dev_sub": 90000,
+      "n_bg": 130,
+      "floor_frac": 0.01,
+      "tuned": {
+        "LR": {
+          "C": 0.3
+        },
+        "GAM": {
+          "lam": 2.0,
+          "n_splines": 5
+        },
+        "EBM": {
+          "learning_rate": 0.01
+        }
+      },
+      "gam_basis_audit": {
+        "n_gam_fits": 0,
+        "n_fell_back": 0,
+        "all_tensor_basis": false,
+        "fallback_tags": [],
+        "detail": []
+      },
+      "elapsed_min": 0.0
+    },
+    "tuning": {
+      "LR": {
+        "C": 0.3
+      },
+      "GAM": {
+        "lam": 2.0,
+        "n_splines": 5
+      },
+      "EBM": {
+        "learning_rate": 0.01
+      },
+      "grid": {
+        "LR": [
+          {
+            "C": 0.3,
+            "valLL": 0.03690588582544764
+          },
+          {
+            "C": 1.0,
+            "valLL": 0.037782518928906446
+          },
+          {
+            "C": 3.0,
+            "valLL": 0.03834769780247451
+          }
+        ],
+        "GAM": [
+          {
+            "lam": 0.2,
+            "n_splines": 5,
+            "valLL": 0.03920428505106023
+          },
+          {
+            "lam": 0.6,
+            "n_splines": 5,
+            "valLL": 0.03868048074498486
+          },
+          {
+            "lam": 2.0,
+            "n_splines": 5,
+            "valLL": 0.03816291792906051
+          }
+        ],
+        "EBM": [
+          {
+            "learning_rate": 0.01,
+            "valLL": 0.03581536481058289
+          },
+          {
+            "learning_rate": 0.02,
+            "valLL": 0.035885170720370285
+          }
+        ]
+      },
+      "dev_sub": 90000
+    },
+    "code": "credit_dgp.py, pipeline_utils.py, Stage 3 and Stage 4 notebooks",
+    "content_sha256": {
+      "credit_dgp.py": "863b5b7099d97d22b98bf3cad274a330c6d2a72a9c59d1894f84a7daaeec93b8",
+      "pipeline_utils.py": "46a00f19fc7c58b8dbb87c3789a8a7e401ef22fbb27fc99ff61b6e2e761111f5",
+      "ground_truth_params.json": "bdeb2fb30cd9171370f4d28b6b491d45cde7447fc54c16f2ac067b3544875890",
+      "outputs/preprocessing_meta.json": "00e8f0a8262dba41ce96897674ec199927e1617391daf8302ebd6cf72c7ba8da",
+      "outputs/oracle_planted_private.json": "eab4a9acb0dc91e44351a8d9778c825b69a03e232a5fc8c73b12699d268ca68c",
+      "outputs/recovery.json": "08c371a8537e1704bd91470c0b86082a087a3626799b0fe17d1c56d32989e861",
+      "outputs/structural_fidelity.json": "8adeb2d29370cb816dca0f2cf547b09a9f200aa9b9874960224d51e3d43ad78d",
+      "outputs/stress_forward.json": "a2ca7bebb171a46029bdb1ed26b9413a615097962f14b06ff060c398d3d02579",
+      "outputs/explanation_stability.json": "87acab1d89041e22776a3e803386ababc547b2275d40a97e8f399bce4819fb3a",
+      "macro_data/BIS_debt_service_ratio_households.csv": "df00404f908f7453305197153e25ba090d5601048f9a1b4de453b522b101cd80",
+      "macro_data/BOE_bank_rate.csv": "e0c5801d3154d83a67afa7151c28e386f9d1b28baeeea3d9286464c26d6ee30c",
+      "macro_data/BOE_credit_growth.csv": "1154d271fc1d29a1b65ebaf37664109f41198f46690284993aff2aef9ec4f33d",
+      "macro_data/ONS_CPI_inflation.csv": "8a29267b20668bec77c9ed5f9f71716aed52bce7835cfa09e9341cd9153d408b",
+      "macro_data/ONS_GDP.csv": "150c403c51303fd15d5a8d266ff5f79aff89f248756c132ee788459145954bad",
+      "macro_data/ONS_household_n_NPISH_saving_ratio.csv": "a9b65d3f0ae6da795511e7af7dd45929cb2dae20c5433779640b947bba6c369d",
+      "macro_data/ONS_regular_pay_growth.csv": "7b5b4d217121442ab06870e1f7860efd3390b5e2dc7d19341afc789795adc791",
+      "macro_data/ONS_umemployment.csv": "566f43af2c268cad8d59d389240f1180b9c095542f7e7e5e650e7c7e7548cb77"
+    },
+    "library_versions": {
+      "numpy": "2.2.4",
+      "scipy": "1.15.2",
+      "pandas": "2.2.3",
+      "sklearn": "1.6.1",
+      "pygam": "0.12.0",
+      "interpret": "0.7.8"
+    },
+    "gam_basis_audit": {
+      "stage3": {
+        "n_gam_fits": 35,
+        "n_fell_back": 0,
+        "all_tensor_basis": true,
+        "fallback_tags": [],
+        "detail": [
+          {
+            "tag": "null_panel_0",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_1",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_2",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_3",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_4",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_5",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_6",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_7",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_8",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "null_panel_9",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed1_null",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed1_weak",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed1_moderate",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed1_strong",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed2_null",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed2_weak",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed2_moderate",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed2_strong",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed3_null",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed3_weak",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed3_moderate",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed3_strong",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed4_null",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed4_weak",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed4_moderate",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed4_strong",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed5_null",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed5_weak",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed5_moderate",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "recovery_seed5_strong",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "structural_seed1",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "structural_seed2",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "structural_seed3",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "structural_seed4",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          },
+          {
+            "tag": "structural_seed5",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          }
+        ]
+      },
+      "stage4": {
+        "n_gam_fits": 1,
+        "n_fell_back": 0,
+        "all_tensor_basis": true,
+        "fallback_tags": [],
+        "detail": [
+          {
+            "tag": "frozen_emergent_seed1",
+            "fell_back": false,
+            "basis": "tensor_interactions"
+          }
+        ]
+      }
+    }
+  }
+}

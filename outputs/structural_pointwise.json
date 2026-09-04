@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "pair": "ix_dti_rate",
+      "model": "Logistic",
+      "oracle_bhat": 0.15242081458234608,
+      "pointwise_rmse": 0.0582,
+      "pointwise_nrmse": 0.247
+    },
+    {
+      "pair": "ix_dti_rate",
+      "model": "GAM",
+      "oracle_bhat": 0.15242081458234608,
+      "pointwise_rmse": 0.0516,
+      "pointwise_nrmse": 0.219
+    },
+    {
+      "pair": "ix_dti_rate",
+      "model": "EBM",
+      "oracle_bhat": 0.15242081458234608,
+      "pointwise_rmse": 0.2166,
+      "pointwise_nrmse": 0.92
+    },
+    {
+      "pair": "ix_selfemp_gdp",
+      "model": "Logistic",
+      "oracle_bhat": -0.08107047316981317,
+      "pointwise_rmse": 0.2926,
+      "pointwise_nrmse": 1.268
+    },
+    {
+      "pair": "ix_selfemp_gdp",
+      "model": "GAM",
+      "oracle_bhat": -0.08107047316981317,
+      "pointwise_rmse": 0.2268,
+      "pointwise_nrmse": 0.983
+    },
+    {
+      "pair": "ix_selfemp_gdp",
+      "model": "EBM",
+      "oracle_bhat": -0.08107047316981317,
+      "pointwise_rmse": 0.1933,
+      "pointwise_nrmse": 0.838
+    },
+    {
+      "pair": "ix_income_rate",
+      "model": "Logistic",
+      "oracle_bhat": 0.047920439798345565,
+      "pointwise_rmse": 0.0513,
+      "pointwise_nrmse": 0.648
+    },
+    {
+      "pair": "ix_income_rate",
+      "model": "GAM",
+      "oracle_bhat": 0.047920439798345565,
+      "pointwise_rmse": 0.0152,
+      "pointwise_nrmse": 0.191
+    },
+    {
+      "pair": "ix_income_rate",
+      "model": "EBM",
+      "oracle_bhat": 0.047920439798345565,
+      "pointwise_rmse": 0.1005,
+      "pointwise_nrmse": 1.269
+    }
+  ],
+  "note": "Pointwise RMSE between each model interaction surface and the emergent-oracle surface, on the 3 strongest emergent pairs (emergent seed 1, confirmation background). nrmse normalises by the oracle surface RMS. A direct shape-recovery measure, complementing the b-hat fingerprint correlation in structural_fidelity.json."
+}

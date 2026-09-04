@@ -1,0 +1,17 @@
+{
+  "Logistic": {
+    "fixed_baseline_pd_%": 0.048,
+    "fixed_severe_pd_%": 64.712,
+    "fixed_delta_pp": 64.664
+  },
+  "GAM": {
+    "fixed_baseline_pd_%": 0.046,
+    "fixed_severe_pd_%": 36.612,
+    "fixed_delta_pp": 36.566
+  },
+  "EBM": {
+    "fixed_baseline_pd_%": 0.38,
+    "fixed_severe_pd_%": 2.343,
+    "fixed_delta_pp": 1.963
+  }
+}

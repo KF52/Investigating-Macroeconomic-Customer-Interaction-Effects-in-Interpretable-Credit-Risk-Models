@@ -1,0 +1,183 @@
+{
+  "n_gam_fits": 35,
+  "n_fell_back": 0,
+  "all_tensor_basis": true,
+  "fallback_tags": [],
+  "detail": [
+    {
+      "tag": "null_panel_0",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_1",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_2",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_3",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_4",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_5",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_6",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_7",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_8",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "null_panel_9",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed1_null",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed1_weak",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed1_moderate",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed1_strong",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed2_null",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed2_weak",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed2_moderate",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed2_strong",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed3_null",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed3_weak",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed3_moderate",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed3_strong",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed4_null",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed4_weak",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed4_moderate",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed4_strong",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed5_null",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed5_weak",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed5_moderate",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "recovery_seed5_strong",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "structural_seed1",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "structural_seed2",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "structural_seed3",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "structural_seed4",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    },
+    {
+      "tag": "structural_seed5",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    }
+  ]
+}

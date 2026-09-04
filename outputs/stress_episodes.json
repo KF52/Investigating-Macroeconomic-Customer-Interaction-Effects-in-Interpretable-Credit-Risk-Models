@@ -1,0 +1,45 @@
+{
+  "out_of_sample_episodes": {
+    "COVID_2020": {
+      "Logistic": {
+        "auc": 0.863,
+        "pd_gap_pp": 0.34,
+        "n": 11548
+      },
+      "GAM": {
+        "auc": 0.895,
+        "pd_gap_pp": 0.84,
+        "n": 11548
+      },
+      "EBM": {
+        "auc": 0.699,
+        "pd_gap_pp": 0.05,
+        "n": 11548
+      }
+    },
+    "inflation_2022": {
+      "Logistic": {
+        "auc": 0.761,
+        "pd_gap_pp": -0.77,
+        "n": 40382
+      },
+      "GAM": {
+        "auc": 0.76,
+        "pd_gap_pp": -1.35,
+        "n": 40382
+      },
+      "EBM": {
+        "auc": 0.837,
+        "pd_gap_pp": -1.05,
+        "n": 40382
+      }
+    }
+  },
+  "excluded": {
+    "GFC_2008": {
+      "n_out_of_sample_rows": 0,
+      "reason": "window falls inside the training block under the temporal split; no out of sample rows"
+    }
+  },
+  "note": "Episodes scored on confirmation rows only (origination and observation after 2019Q4), so all reported episodes are out of sample."
+}

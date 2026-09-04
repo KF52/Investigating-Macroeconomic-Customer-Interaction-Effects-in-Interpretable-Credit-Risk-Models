@@ -1,0 +1,107 @@
+[
+  {
+    "seed": 1,
+    "model": "Logistic",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.2936087923681033,
+    "rmse": 0.15168242294575907
+  },
+  {
+    "seed": 1,
+    "model": "GAM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.1800194981498994,
+    "rmse": 0.1932235369330676
+  },
+  {
+    "seed": 1,
+    "model": "EBM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.3353455054824766,
+    "rmse": 0.0328892141661332
+  },
+  {
+    "seed": 2,
+    "model": "Logistic",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.4456921052792236,
+    "rmse": 0.1490608305212145
+  },
+  {
+    "seed": 2,
+    "model": "GAM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.34591691251487033,
+    "rmse": 0.18789245304669924
+  },
+  {
+    "seed": 2,
+    "model": "EBM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.29989543723419165,
+    "rmse": 0.045168653977101174
+  },
+  {
+    "seed": 3,
+    "model": "Logistic",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.44711537878585766,
+    "rmse": 0.16652965512823897
+  },
+  {
+    "seed": 3,
+    "model": "GAM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.4479589983581261,
+    "rmse": 0.1592659856892636
+  },
+  {
+    "seed": 3,
+    "model": "EBM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.3305580460996961,
+    "rmse": 0.040639268150846695
+  },
+  {
+    "seed": 4,
+    "model": "Logistic",
+    "sign_agree_strong": 0.6666666666666666,
+    "surface_corr": 0.25228201892049834,
+    "rmse": 0.15552345332578302
+  },
+  {
+    "seed": 4,
+    "model": "GAM",
+    "sign_agree_strong": 0.6666666666666666,
+    "surface_corr": 0.19392387170412984,
+    "rmse": 0.17687415858126906
+  },
+  {
+    "seed": 4,
+    "model": "EBM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.7243114563634633,
+    "rmse": 0.04069349201485362
+  },
+  {
+    "seed": 5,
+    "model": "Logistic",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.45943009212615643,
+    "rmse": 0.13489997101953136
+  },
+  {
+    "seed": 5,
+    "model": "GAM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.4161813234304963,
+    "rmse": 0.1371384466706253
+  },
+  {
+    "seed": 5,
+    "model": "EBM",
+    "sign_agree_strong": 1.0,
+    "surface_corr": 0.41814360370459736,
+    "rmse": 0.03045738804610282
+  }
+]

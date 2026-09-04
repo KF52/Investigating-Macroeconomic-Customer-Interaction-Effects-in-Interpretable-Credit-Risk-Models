@@ -1,0 +1,180 @@
+{
+  "candidate_pairs": [
+    {
+      "micro": "z_income",
+      "macro": "z_unemp",
+      "col": "ix_income_unemp"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_cpi",
+      "col": "ix_income_cpi"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_rate",
+      "col": "ix_income_rate"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_gdp",
+      "col": "ix_income_gdp"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_wage",
+      "col": "ix_income_wage"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_unemp",
+      "col": "ix_dti_unemp"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_cpi",
+      "col": "ix_dti_cpi"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_rate",
+      "col": "ix_dti_rate"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_gdp",
+      "col": "ix_dti_gdp"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_wage",
+      "col": "ix_dti_wage"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_unemp",
+      "col": "ix_util_unemp"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_cpi",
+      "col": "ix_util_cpi"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_rate",
+      "col": "ix_util_rate"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_gdp",
+      "col": "ix_util_gdp"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_wage",
+      "col": "ix_util_wage"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_unemp",
+      "col": "ix_pti_unemp"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_cpi",
+      "col": "ix_pti_cpi"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_rate",
+      "col": "ix_pti_rate"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_gdp",
+      "col": "ix_pti_gdp"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_wage",
+      "col": "ix_pti_wage"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_unemp",
+      "col": "ix_savbuf_unemp"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_cpi",
+      "col": "ix_savbuf_cpi"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_rate",
+      "col": "ix_savbuf_rate"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_gdp",
+      "col": "ix_savbuf_gdp"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_wage",
+      "col": "ix_savbuf_wage"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_unemp",
+      "col": "ix_lti_unemp"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_cpi",
+      "col": "ix_lti_cpi"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_rate",
+      "col": "ix_lti_rate"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_gdp",
+      "col": "ix_lti_gdp"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_wage",
+      "col": "ix_lti_wage"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_unemp",
+      "col": "ix_selfemp_unemp"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_cpi",
+      "col": "ix_selfemp_cpi"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_rate",
+      "col": "ix_selfemp_rate"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_gdp",
+      "col": "ix_selfemp_gdp"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_wage",
+      "col": "ix_selfemp_wage"
+    }
+  ],
+  "note": "public 35-pair grid, names only (no truth labels)"
+}

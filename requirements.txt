@@ -1,0 +1,16 @@
+# Python 3.12.0 was used to produce every saved result in outputs/.
+# These 6 are pinned exactly because they are the only packages the computation
+# itself touches (DGP generation, preprocessing, model fitting, the interaction
+# ruler). Their versions are also recorded in outputs/stage5_synthesis.json's
+# reproducibility_manifest, so a mismatch there is easy to detect after the fact.
+numpy==2.2.4
+scipy==1.15.2
+pandas==2.2.3
+scikit-learn==1.6.1
+pygam==0.12.0
+interpret==0.7.8
+
+# Figure rendering and notebook execution only, neither affects a computed
+# number, so these do not need exact patch-version pinning to reproduce results.
+matplotlib==3.10.6
+jupyter

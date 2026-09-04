@@ -1,0 +1,42 @@
+{
+  "pilot": false,
+  "full": true,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "strengths": [
+    "null",
+    "weak",
+    "moderate",
+    "strong"
+  ],
+  "n_orig": 600,
+  "n_null": 10,
+  "dev_sub": 90000,
+  "n_bg": 130,
+  "floor_frac": 0.01,
+  "tuned": {
+    "LR": {
+      "C": 0.3
+    },
+    "GAM": {
+      "lam": 2.0,
+      "n_splines": 5
+    },
+    "EBM": {
+      "learning_rate": 0.01
+    }
+  },
+  "gam_basis_audit": {
+    "n_gam_fits": 0,
+    "n_fell_back": 0,
+    "all_tensor_basis": false,
+    "fallback_tags": [],
+    "detail": []
+  },
+  "elapsed_min": 0.0
+}

@@ -1,0 +1,36 @@
+{
+  "hidden_active_set": [
+    {
+      "micro": "z_pti",
+      "macro": "z_gdp",
+      "sign": 1.0
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_wage",
+      "sign": 1.0
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_cpi",
+      "sign": 1.0
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_rate",
+      "sign": 1.0
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_rate",
+      "sign": 1.0
+    }
+  ],
+  "strengths": {
+    "null": 0.0,
+    "weak": 0.1,
+    "moderate": 0.2,
+    "strong": 0.35
+  },
+  "note": "SEALED private planted oracle (active pairs, signs, amplitudes). Do NOT open before the Stage 3 freeze."
+}

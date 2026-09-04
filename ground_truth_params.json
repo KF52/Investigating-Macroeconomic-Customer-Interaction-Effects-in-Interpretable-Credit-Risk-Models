@@ -1,0 +1,170 @@
+{
+  "base_hazard": -6.15,
+  "base_arrears": -3.3,
+  "beta_income": -0.45,
+  "beta_dti": 0.45,
+  "beta_util": 0.3,
+  "beta_pti": 0.2,
+  "beta_dsr": 0.2,
+  "beta_residual": -0.12,
+  "beta_savings": -0.2,
+  "beta_hist": -0.15,
+  "beta_tenure": -0.1,
+  "beta_delinq24": 0.22,
+  "beta_searches": 0.06,
+  "beta_unverified": 0.2,
+  "beta_self_emp": 0.2,
+  "beta_new_credit": 0.04,
+  "beta_other_earner": -0.12,
+  "beta_existing_customer": -0.08,
+  "beta_income_shock": 0.45,
+  "beta_prior_arrears": 0.25,
+  "housing_beta": {
+    "own_outright": 0.0,
+    "mortgage": 0.05,
+    "private_rent": 0.15,
+    "social_rent": 0.2,
+    "family_other": 0.1
+  },
+  "purpose_beta": {
+    "debt_consolidation": 0.15,
+    "vehicle": -0.05,
+    "home_improvement": -0.03,
+    "wedding_event": 0.05,
+    "holiday": 0.05,
+    "education": 0.03,
+    "other_unknown": 0.08,
+    "essential_living_costs": 0.2,
+    "unexpected_emergency": 0.18,
+    "housing_payment": 0.22
+  },
+  "adverse_beta": {
+    "none": 0.0,
+    "CCJ": 0.35,
+    "recent_default": 0.55,
+    "IVA_DRO": 0.7,
+    "bankruptcy": 0.9
+  },
+  "region_beta": {
+    "NE": 0.08,
+    "NW": 0.04,
+    "YH": 0.05,
+    "EM": 0.02,
+    "WM": 0.03,
+    "EE": -0.01,
+    "LON": -0.06,
+    "SE": -0.05,
+    "SW": -0.02,
+    "SCT": 0.03,
+    "WAL": 0.05,
+    "NI": 0.04
+  },
+  "beta_M": 0.2,
+  "beta_gdp": -0.1,
+  "beta_wage": -0.08,
+  "beta_saving_macro": -0.06,
+  "delta_income_unemp": -0.35,
+  "delta_dti_rate": 0.35,
+  "delta_income_cpi": -0.2,
+  "delta_selfemp_gdp": -0.3,
+  "delta_savings_stress": -0.2,
+  "beta_season": 0.12,
+  "season_scale": 8.0,
+  "beta_inarrears": 0.8,
+  "shock_base_prob": 0.01,
+  "shock_unemp_sens": 1.5,
+  "shock_recover_prob": 0.3,
+  "shock_jobloss_frac": 0.45,
+  "shock_mult_jobloss": 0.45,
+  "shock_mult_reduced": 0.75,
+  "prepay_base": -3.1,
+  "prepay_season": 0.04,
+  "prepay_riskaverse": 0.3,
+  "utp_base": -6.2,
+  "utp_adverse": 0.6,
+  "rho_asset": 0.1,
+  "theta_macro": 0.5,
+  "sigma_eta": 0.45,
+  "kappa_dsr_dti": 0.06,
+  "kappa_credit_util": 0.1,
+  "pop_stats": {
+    "log_inc_mu": 10.350589323816193,
+    "log_inc_sd": 0.555985606443638,
+    "dti_mu": 0.2701551097581917,
+    "dti_sd": 0.157118183620914,
+    "lti_mu": 0.23996201333974024,
+    "lti_sd": 0.11270733388399837,
+    "pti_mu": 0.10377630413662506,
+    "pti_sd": 0.06923232608238593,
+    "dsr_mu": 0.1331257221520109,
+    "dsr_sd": 0.08743887105183656,
+    "resid_mu": 636.489385,
+    "resid_sd": 595.8435356176333,
+    "residfrac_mu": 0.24215960247010274,
+    "residfrac_sd": 0.14925493438446635,
+    "savbuf_mu": 2.5044832745339396,
+    "savbuf_sd": 2.67064483515626,
+    "util_mu": 0.38876581203224586,
+    "util_sd": 0.2305854192779471,
+    "hist_mu": 82.227785,
+    "hist_sd": 54.309526963450665,
+    "tenure_mu": 50.241715,
+    "tenure_sd": 38.67096079565098
+  },
+  "hist_stats": {
+    "unemployment": {
+      "mu": 5.4222222222222225,
+      "sd": 1.3528537406336933
+    },
+    "cpi_inflation": {
+      "mu": 2.645454545454545,
+      "sd": 2.0601692941749126
+    },
+    "bank_rate": {
+      "mu": 2.2917282060398003,
+      "sd": 2.066459705442166
+    },
+    "gdp_growth": {
+      "mu": 0.4101010101010102,
+      "sd": 2.7964080477632267
+    },
+    "wage_growth": {
+      "mu": 0.7969696969696969,
+      "sd": 1.604700523151645
+    },
+    "dsr": {
+      "mu": 10.290909090909091,
+      "sd": 1.2981020262380825
+    },
+    "credit_growth": {
+      "mu": 6.322222222222222,
+      "sd": 5.398266338490484
+    },
+    "saving_ratio": {
+      "mu": 8.649494949494951,
+      "sd": 3.2880983339941188
+    }
+  },
+  "winsor_sd": 3.0,
+  "m_weights": {
+    "unemployment": 0.5,
+    "cpi_inflation": 0.25,
+    "bank_rate": 0.25
+  },
+  "emergent_params": {
+    "base_hazard_e": -8.6,
+    "unemp_income_drag": 0.14,
+    "ref_net_monthly": 2350.0,
+    "cpi_exp_sens": 0.18,
+    "rate_passthrough": 0.3,
+    "gdp_income_sens_se": 0.25,
+    "gdp_income_sens_emp": 0.05,
+    "buffer_drain": 0.9,
+    "beta_resid_lin": -0.45,
+    "beta_resid_conv": 0.85,
+    "beta_savbuf_lin": -0.2,
+    "beta_savbuf_conv": 0.55
+  },
+  "n_orig_per_quarter": 600,
+  "seed": 1
+}

@@ -1,0 +1,13 @@
+{
+  "n_gam_fits": 1,
+  "n_fell_back": 0,
+  "all_tensor_basis": true,
+  "fallback_tags": [],
+  "detail": [
+    {
+      "tag": "frozen_emergent_seed1",
+      "fell_back": false,
+      "basis": "tensor_interactions"
+    }
+  ]
+}

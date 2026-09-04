@@ -1,0 +1,394 @@
+{
+  "random_state": 42,
+  "scaler": {
+    "z_income": {
+      "mu": 10.330692702888003,
+      "sd": 0.5574943345998199
+    },
+    "z_dti": {
+      "mu": 0.27923066338748637,
+      "sd": 0.16020653183727368
+    },
+    "z_dsr": {
+      "mu": 0.13740056590385905,
+      "sd": 0.08956167257245362
+    },
+    "z_pti": {
+      "mu": 0.09525481070190416,
+      "sd": 0.05940526439195216
+    },
+    "z_residual": {
+      "mu": 625.1418362027051,
+      "sd": 583.6698319086407
+    },
+    "z_savbuf": {
+      "mu": 2.483888964700299,
+      "sd": 2.6098846710942865
+    },
+    "z_lti": {
+      "mu": 0.2431021642708548,
+      "sd": 0.1134608587641875
+    },
+    "z_util": {
+      "mu": 0.3911369141910963,
+      "sd": 0.24910065389286545
+    },
+    "z_hist": {
+      "mu": 81.85576793528243,
+      "sd": 53.93883919199756
+    },
+    "z_tenure": {
+      "mu": 50.68823040108722,
+      "sd": 39.07357533084196
+    },
+    "z_mob": {
+      "mu": 5.831088799198645,
+      "sd": 4.951812152032652
+    },
+    "z_searches": {
+      "mu": 1.2018059761819684,
+      "sd": 1.0887940234175513
+    },
+    "z_dependants": {
+      "mu": 0.4694835130717997,
+      "sd": 0.6693466027119018
+    },
+    "z_unemp": {
+      "mu": 6.173914979116753,
+      "sd": 1.2862061572421368
+    },
+    "z_cpi": {
+      "mu": 2.162621037894453,
+      "sd": 1.1928485229019883
+    },
+    "z_rate": {
+      "mu": 2.3006294496772224,
+      "sd": 2.07201846164981
+    },
+    "z_gdp": {
+      "mu": 0.39619591004680443,
+      "sd": 0.6475983136878349
+    },
+    "z_wage": {
+      "mu": 0.6012915590286116,
+      "sd": 1.4870625607291024
+    },
+    "z_dsr_m": {
+      "mu": 11.07976961062849,
+      "sd": 1.1788498654049944
+    },
+    "z_credit_m": {
+      "mu": 6.059255115370424,
+      "sd": 5.32063976539506
+    },
+    "z_sav_m": {
+      "mu": 8.761413734322922,
+      "sd": 1.87858336138991
+    }
+  },
+  "util_impute": 0.3911369141910963,
+  "base_features": [
+    "z_income",
+    "z_dti",
+    "z_dsr",
+    "z_pti",
+    "z_residual",
+    "z_savbuf",
+    "z_lti",
+    "z_util",
+    "z_hist",
+    "z_tenure",
+    "z_mob",
+    "delinquency_count_24m",
+    "recent_credit_searches_6m",
+    "financial_dependants",
+    "income_shock_t",
+    "prior_arrears_count_12m_t",
+    "in_arrears_t",
+    "new_credit_accounts_24m",
+    "open_credit_accounts",
+    "other_household_earner_flag",
+    "existing_customer_flag",
+    "util_missing",
+    "emp_part_time",
+    "emp_temporary",
+    "emp_self_employed",
+    "emp_unemployed",
+    "emp_benefits",
+    "emp_retired",
+    "emp_student",
+    "emp_other",
+    "housing_mortgage",
+    "housing_private_rent",
+    "housing_social_rent",
+    "housing_family_other",
+    "evid_bank_transactions",
+    "evid_tax_return",
+    "evid_pension_evidence",
+    "evid_benefits_evidence",
+    "evid_declared_only",
+    "purpose_vehicle",
+    "purpose_home_improvement",
+    "purpose_wedding_event",
+    "purpose_holiday",
+    "purpose_education",
+    "purpose_other_unknown",
+    "purpose_essential_living_costs",
+    "purpose_unexpected_emergency",
+    "purpose_housing_payment",
+    "adverse_CCJ",
+    "adverse_recent_default",
+    "adverse_IVA_DRO",
+    "adverse_bankruptcy",
+    "region_NW",
+    "region_YH",
+    "region_EM",
+    "region_WM",
+    "region_EE",
+    "region_LON",
+    "region_SE",
+    "region_SW",
+    "region_SCT",
+    "region_WAL",
+    "region_NI",
+    "age_18-24",
+    "age_25-34",
+    "age_45-54",
+    "age_55-64",
+    "age_65-74",
+    "age_75+",
+    "z_unemp",
+    "z_cpi",
+    "z_rate",
+    "z_gdp",
+    "z_wage",
+    "z_dsr_m",
+    "z_credit_m",
+    "z_sav_m"
+  ],
+  "candidate_pairs": [
+    {
+      "micro": "z_income",
+      "macro": "z_unemp",
+      "col": "ix_income_unemp"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_cpi",
+      "col": "ix_income_cpi"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_rate",
+      "col": "ix_income_rate"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_gdp",
+      "col": "ix_income_gdp"
+    },
+    {
+      "micro": "z_income",
+      "macro": "z_wage",
+      "col": "ix_income_wage"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_unemp",
+      "col": "ix_dti_unemp"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_cpi",
+      "col": "ix_dti_cpi"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_rate",
+      "col": "ix_dti_rate"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_gdp",
+      "col": "ix_dti_gdp"
+    },
+    {
+      "micro": "z_dti",
+      "macro": "z_wage",
+      "col": "ix_dti_wage"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_unemp",
+      "col": "ix_util_unemp"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_cpi",
+      "col": "ix_util_cpi"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_rate",
+      "col": "ix_util_rate"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_gdp",
+      "col": "ix_util_gdp"
+    },
+    {
+      "micro": "z_util",
+      "macro": "z_wage",
+      "col": "ix_util_wage"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_unemp",
+      "col": "ix_pti_unemp"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_cpi",
+      "col": "ix_pti_cpi"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_rate",
+      "col": "ix_pti_rate"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_gdp",
+      "col": "ix_pti_gdp"
+    },
+    {
+      "micro": "z_pti",
+      "macro": "z_wage",
+      "col": "ix_pti_wage"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_unemp",
+      "col": "ix_savbuf_unemp"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_cpi",
+      "col": "ix_savbuf_cpi"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_rate",
+      "col": "ix_savbuf_rate"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_gdp",
+      "col": "ix_savbuf_gdp"
+    },
+    {
+      "micro": "z_savbuf",
+      "macro": "z_wage",
+      "col": "ix_savbuf_wage"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_unemp",
+      "col": "ix_lti_unemp"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_cpi",
+      "col": "ix_lti_cpi"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_rate",
+      "col": "ix_lti_rate"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_gdp",
+      "col": "ix_lti_gdp"
+    },
+    {
+      "micro": "z_lti",
+      "macro": "z_wage",
+      "col": "ix_lti_wage"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_unemp",
+      "col": "ix_selfemp_unemp"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_cpi",
+      "col": "ix_selfemp_cpi"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_rate",
+      "col": "ix_selfemp_rate"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_gdp",
+      "col": "ix_selfemp_gdp"
+    },
+    {
+      "micro": "emp_self_employed",
+      "macro": "z_wage",
+      "col": "ix_selfemp_wage"
+    }
+  ],
+  "micro_z_smooth": [
+    "z_income",
+    "z_dti",
+    "z_dsr",
+    "z_pti",
+    "z_residual",
+    "z_savbuf",
+    "z_lti",
+    "z_util",
+    "z_hist",
+    "z_tenure",
+    "z_mob"
+  ],
+  "macro_z_smooth": [
+    "z_unemp",
+    "z_cpi",
+    "z_rate",
+    "z_gdp",
+    "z_wage"
+  ],
+  "housing_levels": [
+    "own_outright",
+    "mortgage",
+    "private_rent",
+    "social_rent",
+    "family_other"
+  ],
+  "housing_baseline": "own_outright",
+  "region_levels": [
+    "NE",
+    "NW",
+    "YH",
+    "EM",
+    "WM",
+    "EE",
+    "LON",
+    "SE",
+    "SW",
+    "SCT",
+    "WAL",
+    "NI"
+  ],
+  "region_baseline": "NE",
+  "split": {
+    "dev_end": "2016Q4",
+    "val_end": "2019Q4"
+  },
+  "n_orig_per_quarter": 600
+}
